@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--fem-clr-accent-3);
+  font-family: var(--fem-font-family-default);
+  font-size: var(--fem-fs-base);
+  line-height: 1.2;
+}
+
+.grid-flow {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}

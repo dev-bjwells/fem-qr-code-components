@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root,
+::before,
+::after {
+  --fem-clr-white: 0, 0%, 100%;
+  --fem-clr-light-grey: 212, 45%, 89%;
+  --fem-clr-blue-grey: 220, 15%, 55%;
+  --fem-clr-dark-blue: 218, 44%, 22%;
+
+  --fem-clr-accent-1: hsl(var(--fem-clr-white));
+  --fem-clr-accent-2: hsl(var(--fem-clr-light-grey));
+  --fem-clr-accent-3: hsl(var(--fem-clr-blue-grey));
+  --fem-clr-accent-4: hsl(var(--fem-clr-dark-blue));
+
+  --fem-box-shadow: hsla(var(--fem-clr-dark-blue), 0.2);
+
+  --fem-font-family-default: "Outfit", sans-serif;
+
+  --fem-fw-regular: 400;
+  --fem-fw-bold: 700;
+
+  --fem-fs-base: 15px;
+  --fem-fs-header: 1.4rem;
+  --fem-fs-body: 1rem;
+}

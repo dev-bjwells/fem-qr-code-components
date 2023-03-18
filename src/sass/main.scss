@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+// SASS DOCUMENTATION: https://sass-lang.com/documentation
+@use "sass:map";
+
+// included source files for styling options
+@use "themes";
+@use "base";
+@use "components";

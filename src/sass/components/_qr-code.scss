@@ -1,0 +1,54 @@
+[data-component='qr-code'] {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--fem-clr-accent-2);
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  .component {
+    margin-inline: 1rem;
+    padding: 1rem;
+    background-color: var(--fem-clr-accent-1);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem 3rem var(--fem-box-shadow);
+    max-width: 325px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+    text-align: center;
+
+    .content-title {
+      color: var(--fem-clr-accent-4);
+      font-size: var(--fem-fs-header);
+      font-weight: var(--fem-fw-bold);
+    }
+
+    p {
+      font-size: var(--fem-fs-body);
+      font-weight: var(--fem-fw-regular);
+    }
+  }
+
+  // iPad with portrait orientation.
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    min-height: 1024px;
+  }
+
+  // iPad with landscape orientation.
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    min-height: 768px;
+  }
+
+  // iPhone 5 - You can also target devices with aspect ratio.
+  @media screen and (device-aspect-ratio: 40/71) {
+    min-height: 500px;
+  }
+}
