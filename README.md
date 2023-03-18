@@ -9,7 +9,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties and variables
 - CSS Grid
 - Mobile-first workflow
 - [SASS](https://sass-lang.com/) - CSS Builder
