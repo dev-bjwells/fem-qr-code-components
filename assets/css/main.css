@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root,
+::before,
+::after {
+  --fem-clr-white: 0, 0%, 100%;
+  --fem-clr-light-grey: 212, 45%, 89%;
+  --fem-clr-blue-grey: 220, 15%, 55%;
+  --fem-clr-dark-blue: 218, 44%, 22%;
+  --fem-clr-accent-1: hsl(var(--fem-clr-white));
+  --fem-clr-accent-2: hsl(var(--fem-clr-light-grey));
+  --fem-clr-accent-3: hsl(var(--fem-clr-blue-grey));
+  --fem-clr-accent-4: hsl(var(--fem-clr-dark-blue));
+  --fem-box-shadow: hsla(var(--fem-clr-dark-blue), 0.2);
+  --fem-font-family-default: "Outfit", sans-serif;
+  --fem-fw-regular: 400;
+  --fem-fw-bold: 700;
+  --fem-fs-base: 15px;
+  --fem-fs-header: 1.4rem;
+  --fem-fs-body: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--fem-clr-accent-3);
+  font-family: var(--fem-font-family-default);
+  font-size: var(--fem-fs-base);
+  line-height: 1.2;
+}
+
+.grid-flow {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+[data-component=qr-code] {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--fem-clr-accent-2);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+[data-component=qr-code] .component {
+  margin-inline: 1rem;
+  padding: 1rem;
+  background-color: var(--fem-clr-accent-1);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 3rem var(--fem-box-shadow);
+  max-width: 325px;
+}
+[data-component=qr-code] img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+[data-component=qr-code] .content {
+  padding: 1rem;
+  text-align: center;
+}
+[data-component=qr-code] .content .content-title {
+  color: var(--fem-clr-accent-4);
+  font-size: var(--fem-fs-header);
+  font-weight: var(--fem-fw-bold);
+}
+[data-component=qr-code] .content p {
+  font-size: var(--fem-fs-body);
+  font-weight: var(--fem-fw-regular);
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  [data-component=qr-code] {
+    min-height: 1024px;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  [data-component=qr-code] {
+    min-height: 768px;
+  }
+}
+@media screen and (device-aspect-ratio: 40/71) {
+  [data-component=qr-code] {
+    min-height: 500px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
