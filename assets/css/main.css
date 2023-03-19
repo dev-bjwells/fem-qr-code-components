@@ -46,6 +46,25 @@ body {
   line-height: 1.2;
 }
 
+footer {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+footer a {
+  color: var(--fem-clr-accent-4);
+  font-weight: var(--fem-fw-bold);
+  transition: all 0.2s;
+}
+footer a:hover, footer a:focus {
+  text-decoration: none;
+}
+footer .attribution {
+  padding: 1rem;
+}
+
 .grid-flow {
   display: grid;
   align-content: start;
