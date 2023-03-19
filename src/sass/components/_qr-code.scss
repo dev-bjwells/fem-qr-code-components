@@ -47,7 +47,7 @@
     min-height: 768px;
   }
 
-  // iPhone 5 - You can also target devices with aspect ratio.
+  // iPhone 5 with aspect ratio.
   @media screen and (device-aspect-ratio: 40/71) {
     min-height: 500px;
   }
